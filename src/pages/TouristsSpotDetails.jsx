@@ -1,4 +1,5 @@
 import { Fade } from "react-awesome-reveal"
+import { Helmet } from "react-helmet-async"
 import { FaCalendar, FaMap, FaPhoneAlt, FaRegClock } from "react-icons/fa"
 import { FaPeopleGroup } from "react-icons/fa6"
 import { IoMailOpenSharp } from "react-icons/io5"
@@ -11,6 +12,9 @@ const TouristsSpotDetails = () => {
 	const { spot_name, country_name, image, location, description, seasonality, travel_time, average_cost, total_visitors_per_year } = touristsSpot
 	return (
 		<div className='flex flex-col gap-8 mt-8 mx-4 xl:mx-0'>
+			<Helmet>
+				<title>Voyago || Tourists Spot Detail</title>
+			</Helmet>
 			<Fade cascade>
 				<div className='relative h-[400px]'>
 					<div className='opacity-50 rounded-2xl h-full'>

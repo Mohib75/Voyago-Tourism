@@ -1,4 +1,5 @@
 import { Slide } from "react-awesome-reveal"
+import { Helmet } from "react-helmet-async"
 import { useForm } from "react-hook-form"
 import { useLoaderData } from "react-router-dom"
 
@@ -49,6 +50,9 @@ const TouristsSpotUpdate = () => {
 	}
 	return (
 		<Slide direction='down'>
+			<Helmet>
+				<title>Voyago || Tourists Spot Update</title>
+			</Helmet>
 			<div className='flex justify-center my-16 mx-4 lg:mx-0'>
 				<div
 					className='w-full max-w-4xl py-8 px-6 sm:p-8 space-y-3 rounded-xl bg-[#17171a] drop-shadow-xl mx-4 sm:mx-0'

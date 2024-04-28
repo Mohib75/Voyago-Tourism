@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useLoaderData, useParams } from "react-router-dom"
 import TouristsSpotCard from "../components/TouristsSpotCard"
 import { Fade } from "react-awesome-reveal"
+import { Helmet } from "react-helmet-async"
 
 const CountryTouristsSpot = () => {
 	const loadedCountry = useLoaderData()
@@ -20,6 +21,9 @@ const CountryTouristsSpot = () => {
 	}, [country_name])
 	return (
 		<div className='bg-[#17171a] p-8 flex flex-col items-center rounded-2xl mt-12'>
+			<Helmet>
+				<title>Voyago || Country</title>
+			</Helmet>
 			<Fade cascade>
 				<h2 className='text-6xl text-white font-bold my-8 text-center'>Our {country_name} Tourists Spots</h2>
 

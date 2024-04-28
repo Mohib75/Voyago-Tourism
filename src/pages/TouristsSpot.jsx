@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useLoaderData } from "react-router-dom"
 import TouristsSpotCard from "../components/TouristsSpotCard"
 import { FaAngleDown } from "react-icons/fa"
+import { Helmet } from "react-helmet-async"
 
 const TouristsSpot = () => {
 	const loadedtouristsSpot = useLoaderData()
@@ -15,6 +16,9 @@ const TouristsSpot = () => {
 
 	return (
 		<div className='bg-[#17171a] p-8 flex flex-col items-center rounded-2xl mt-12 mx-4 sm:mx-0'>
+			<Helmet>
+				<title>Voyago || Tourists Spot</title>
+			</Helmet>
 			<h2 className='text-xl sm:text-6xl text-white font-bold my-8 text-center'>Our Tourists Spots</h2>
 
 			<div className='dropdown self-center my-8'>

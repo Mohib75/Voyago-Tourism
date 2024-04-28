@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form"
 import useAuth from "../hooks/useAuth"
 import Swal from "sweetalert2"
 import { Slide } from "react-awesome-reveal"
+import { Helmet } from "react-helmet-async"
 
 const AddTouristsSpot = () => {
 	const { user } = useAuth()
@@ -49,6 +50,9 @@ const AddTouristsSpot = () => {
 
 	return (
 		<Slide direction='down'>
+			<Helmet>
+				<title>Voyago || Add Tourists Spot</title>
+			</Helmet>
 			<div className='flex justify-center my-16 mx-4 lg:mx-0'>
 				<div
 					className='w-full max-w-4xl py-8 px-6 sm:p-8 space-y-3 rounded-xl bg-[#17171a] drop-shadow-xl mx-4 sm:mx-0'

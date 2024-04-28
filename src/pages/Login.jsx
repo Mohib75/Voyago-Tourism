@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form"
 import toast from "react-hot-toast"
 import { Slide } from "react-awesome-reveal"
 import Button from "../components/Button"
+import { Helmet } from "react-helmet-async"
 
 const Login = () => {
 	const { signInUser } = useAuth()
@@ -36,6 +37,9 @@ const Login = () => {
 	}
 	return (
 		<Slide direction='down'>
+			<Helmet>
+				<title>Voyago || Login</title>
+			</Helmet>
 			<div className='flex justify-center my-16'>
 				<div
 					className='w-full max-w-md p-8 space-y-3 rounded-xl bg-[#17171a] drop-shadow-xl mx-4 sm:mx-0'

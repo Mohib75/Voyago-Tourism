@@ -6,6 +6,7 @@ import toast from "react-hot-toast"
 import { useEffect, useState } from "react"
 import useAuth from "../hooks/useAuth"
 import { Slide } from "react-awesome-reveal"
+import { Helmet } from "react-helmet-async"
 
 const Register = () => {
 	const { createUser, updateUserProfile, logout } = useAuth()
@@ -47,6 +48,9 @@ const Register = () => {
 	}
 	return (
 		<Slide direction='down'>
+			<Helmet>
+				<title>Voyago || Register</title>
+			</Helmet>
 			<div className='flex justify-center my-16'>
 				<div
 					className='w-full max-w-md p-8 space-y-3 rounded-xl bg-[#17171a] drop-shadow-xl mx-4 sm:mx-0'

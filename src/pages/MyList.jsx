@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import useAuth from "../hooks/useAuth"
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2"
+import { Helmet } from "react-helmet-async"
 
 const MyList = () => {
 	const { user } = useAuth()
@@ -49,6 +50,9 @@ const MyList = () => {
 	}, [user])
 	return (
 		<div className='flex flex-col items-center mt-12 gap-4'>
+			<Helmet>
+				<title>Voyago || My List</title>
+			</Helmet>
 			{myTouristData &&
 				myTouristData.map((tData, index) => (
 					<div className='overflow-x-auto bg-[#17171a] rounded-2xl w-[85%] sm:w-[70%]' key={index}>

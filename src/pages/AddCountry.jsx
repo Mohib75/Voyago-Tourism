@@ -1,4 +1,5 @@
 import { Slide } from "react-awesome-reveal"
+import { Helmet } from "react-helmet-async"
 import { useForm } from "react-hook-form"
 import Swal from "sweetalert2"
 
@@ -40,6 +41,9 @@ const AddCountry = () => {
 
 	return (
 		<Slide direction='down'>
+			<Helmet>
+				<title>Voyago || Add Country</title>
+			</Helmet>
 			<div className='flex justify-center my-16'>
 				<div
 					className='w-full max-w-4xl p-8 space-y-3 rounded-xl bg-[#17171a] drop-shadow-xl mx-4 sm:mx-0'
