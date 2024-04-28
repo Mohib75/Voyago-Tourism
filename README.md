@@ -17,7 +17,9 @@ Here are some features and characteristics of our website
 
 * React Router dom  is for the api fetching and routing through the page
 
-* we used mongodb for database. This is a nosql database.
+* we use mongodb for database. This is a nosql database.
+
+* we use vercel for server side deployment
 
 * we use also a slider in our home page
 
