@@ -38,7 +38,7 @@ Here are some features and characteristics of our website
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Mohib75/your-repo-name.git
+   git clone https://github.com/Mohib75/your-repo-name.git](https://github.com/Mohib75/voyago-tourism.git
 
 2. **Navigate to the project directory:**
 
